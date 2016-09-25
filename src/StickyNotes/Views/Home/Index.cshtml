@@ -12,12 +12,12 @@
         <div>
           
            
-           <a href="/login" ng-show="!account.isLoggedIn()">Login</a>
+           <a class="anchor" href="/login" ng-show="!account.isLoggedIn()">Login</a>
            
            <div ng-show="account.isLoggedIn()">
                Welcome, {{account.getUserName()}}!
            </div> 
-            <a href="#" ng-click="account.logout()" ng-show="account.isLoggedIn()">(Logout)</a>
+            <div> <a href="#" ng-click="account.logout()" ng-show="account.isLoggedIn()" class="anchor">(Logout)</a></div>
         </div>
         @*<hr />*@
 
